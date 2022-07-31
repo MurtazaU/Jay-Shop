@@ -37,10 +37,10 @@
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="../index.php">Home</a></li>
-                        <li><a class="text-decoration-none" href="../about.php">About Us</a></li>
-                        <li><a class="text-decoration-none" href="../shop.php">Shop Locations</a></li>
-                        <li><a class="text-decoration-none" href="../contact.php">Contact</a></li>
+                        <li><a class="text-decoration-none" href="./index.php">Home</a></li>
+                        <li><a class="text-decoration-none" href="./about.php">About Us</a></li>
+                        <li><a class="text-decoration-none" href="./shop.php">Shop Locations</a></li>
+                        <li><a class="text-decoration-none" href="./contact.php">Contact</a></li>
                     </ul>
                 </div>
 

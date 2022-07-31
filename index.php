@@ -1,3 +1,9 @@
+<!-- Header Link -->
+
+<?php 
+include('./template/header.php');
+?>
+
 <!-- Home Starts Here -->
 
     <!-- Modal -->
@@ -221,3 +227,8 @@
     <!-- End Featured Product -->
 
 
+<!-- Footer Link -->
+
+<?php 
+include('./template/footer.php');
+?>
