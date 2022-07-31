@@ -7,7 +7,7 @@ if(isset($_REQUEST['user_login'])){
     $userpassword = $_REQUEST['user_password'];
 
 
-        $sql = $con->prepare('select * from users where email = ? && password = ?');
+        $sql = $con->prepare('select * from users where useremail = ? && userpassword = ?');
         $sql->bindParam(1,$useremail);
         $sql->bindParam(2,$userpassword);
 

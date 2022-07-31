@@ -116,7 +116,8 @@ Completed By Murtaza Usmani
                             Profile
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="user-profile">
-                            <li><a class="dropdown-item" href="./modules/CRUD/edit.php">Edit Profile</a></li>
+                        <li><a class="dropdown-item" href="./modules/profile/view.php">View Profile</a></li>
+                            <li><a class="dropdown-item" href="./modules/profile/edit.php">Edit Profile</a></li>
                             <li><a class="dropdown-item" href="#">Settings</a></li>
                             <li><a class="dropdown-item" href="#">Security</a></li>
                             <li><a class="dropdown-item" href="#">Updates</a></li>

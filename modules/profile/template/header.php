@@ -1,5 +1,6 @@
 <?php 
 session_start();
+include('../database-connection.php');
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +21,7 @@ session_start();
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/fontawesome.min.css">
 
    
     <?php 
@@ -116,11 +117,12 @@ Completed By Murtaza Usmani
                             Profile
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="user-profile">
+                            <li><a class="dropdown-item" href="./view.php">View Profile</a></li>
                             <li><a class="dropdown-item" href="./edit.php">Edit Profile</a></li>
                             <li><a class="dropdown-item" href="#">Settings</a></li>
                             <li><a class="dropdown-item" href="#">Security</a></li>
                             <li><a class="dropdown-item" href="#">Updates</a></li>
-                            <li><a class="dropdown-item" href="../modules/logout.php">Log Out</a></li>
+                            <li><a class="dropdown-item" href="../../modules/logout.php">Log Out</a></li>
                         </ul>
                     </div>
                     <?php

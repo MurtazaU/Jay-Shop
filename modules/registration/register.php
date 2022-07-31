@@ -11,7 +11,7 @@ if(isset($_REQUEST['user_login'])){
         echo "<script>alert('The Passwords Do Not Match')</script>";
        } else{
 
-        $sql = $con->prepare('insert into users(name,email,password) values (?,?,?)');
+        $sql = $con->prepare('insert into users(username,useremail,userpassword) values (?,?,?)');
         $sql->bindParam(1,$username);
         $sql->bindParam(2,$useremail);
         $sql->bindParam(3,$userpassword);
