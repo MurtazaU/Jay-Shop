@@ -64,6 +64,7 @@ if(isset($_REQUEST['user_login'])){
                     <label for="confirm-password" class="form-label">Confirm Password</label>
                     <input type="password" class="form-control" id="confirm-password" name="user_confirm_password">
                 </div>
+                
                 <input class="btn btn-large btn-transition" type="submit" name="user_login" value="Register">
                 
                 <p class="mt-4">Already Have An Account? <a href="./login.php">Click Here To Login</a></p>  
