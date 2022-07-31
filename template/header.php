@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,10 +52,34 @@ Completed By Murtaza Usmani
                     <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
                 </div>
                 <div>
-                    <a class="text-light" href="#" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="#" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="#" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="#" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                    <?php 
+                    echo $_SESSION['user_email'];
+                    if($_SESSION['user_email']){
+?>
+
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link">Welcome</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" > <?php echo $_SESSION['user_email'];  ?></a>
+                        </li>
+                    </ul>
+<?php
+                    } else{
+                        ?>
+                            <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./modules/registration/register.php">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./modules/registration/login.php">Login</a>
+                        </li>
+                    </ul>
+                        <?php
+                    }
+                    ?>
+                
                 </div>
             </div>
         </div>

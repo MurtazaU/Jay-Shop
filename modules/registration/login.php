@@ -1,4 +1,5 @@
 <?php 
+session_start();
 include('../database-connection.php');
 
 if(isset($_REQUEST['user_login'])){
@@ -13,7 +14,6 @@ if(isset($_REQUEST['user_login'])){
         $sql->execute();
 
         $count = $sql->rowCount();
-        echo $count;
 
 
         if($count == 0){
@@ -22,7 +22,6 @@ if(isset($_REQUEST['user_login'])){
         else{
             $_SESSION['user_email'] = $useremail;
             header('location: ../../index.php');
-
         }
 
 
