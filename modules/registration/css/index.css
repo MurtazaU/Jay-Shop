@@ -1,0 +1,47 @@
+body{
+background-color: rgb(239, 239, 239);
+}
+
+.main-section{
+    margin-top: 5%;
+
+    margin-left: 32%;
+    width: 35%;
+    border: 2px solid rgb(202, 202, 202);
+    box-shadow:
+            2.8px 2.8px 2.2px rgba(0, 0, 0, 0.008),
+            6.7px 6.7px 5.3px rgba(0, 0, 0, 0.012),
+            12.5px 12.5px 10px rgba(0, 0, 0, 0.015),
+            22.3px 22.3px 17.9px rgba(0, 0, 0, 0.018),
+            41.8px 41.8px 33.4px rgba(0, 0, 0, 0.022),
+            100px 100px 80px rgba(0, 0, 0, 0.03)
+;
+
+
+}
+
+form{
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.main-heading{
+    font-weight: 100;
+    text-align: center;
+}
+
+.main-heading-logo{
+    font-weight: 400;
+    color: #59ab6e ;
+    text-decoration: none;
+}
+
+.btn-transition{
+    border: 1px solid #59ab6e ;
+    width: 25%;
+    border-radius: 10%;
+    transition: all 0.25s linear;
+}
+.btn-transition:hover{
+    background-color: #59ab6e ;
+}
