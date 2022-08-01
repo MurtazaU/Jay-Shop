@@ -1,5 +1,5 @@
 <?php 
-include('./template/header.php'); 
+include('../template/header.php'); 
 require('../database-connection.php');
 
 
@@ -178,5 +178,5 @@ if(isset($_REQUEST['user_edit_image'])){
 
 
 <?php 
-include('./template/footer.php');
+include('../template/footer.php');
 ?>

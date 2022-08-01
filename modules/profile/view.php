@@ -1,6 +1,6 @@
 <!-- Header Link -->
 <?php 
-include('./template/header.php');
+include('../template/header.php');
 include('../database-connection.php');
 
 $sql = $con->prepare('select * from users where useremail = ?');
@@ -118,5 +118,5 @@ $record = $sql->fetchAll(PDO::FETCH_OBJ);
 
 <?php
 
-include('./template/footer.php');
+include('../template/footer.php');
 ?>

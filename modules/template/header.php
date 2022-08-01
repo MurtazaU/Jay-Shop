@@ -117,12 +117,12 @@ Completed By Murtaza Usmani
                             Profile
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="user-profile">
-                            <li><a class="dropdown-item" href="./view.php">View Profile</a></li>
-                            <li><a class="dropdown-item" href="./edit.php">Edit Profile</a></li>
+                            <li><a class="dropdown-item" href="../profile/view.php">View Profile</a></li>
+                            <li><a class="dropdown-item" href="../profile/edit.php">Edit Profile</a></li>
                             <li><a class="dropdown-item" href="#">Settings</a></li>
                             <li><a class="dropdown-item" href="#">Security</a></li>
                             <li><a class="dropdown-item" href="#">Updates</a></li>
-                            <li><a class="dropdown-item" href="../../modules/logout.php">Log Out</a></li>
+                            <li><a class="dropdown-item" href="../logout.php">Log Out</a></li>
                         </ul>
                     </div>
                     <?php
@@ -130,10 +130,10 @@ Completed By Murtaza Usmani
                         ?>
                             <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="../modules/registration/register.php">Register</a>
+                            <a class="nav-link" href="../registration/register.php">Register</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../modules/registration/login.php">Login</a>
+                            <a class="nav-link" href="../registration/login.php">Login</a>
                         </li>
                     </ul>
                         <?php
@@ -148,3 +148,4 @@ Completed By Murtaza Usmani
         </div>
     </nav>
     <!-- Close Header -->
+ 
