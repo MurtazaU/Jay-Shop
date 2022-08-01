@@ -120,8 +120,8 @@ Completed By Murtaza Usmani
                         <li><a class="dropdown-item" href="../admin/adminview.php">View Admin Profile</a></li>
                             <li><a class="dropdown-item" href="../admin/adminedit.php">Edit Admin Profile</a></li>
                             <li><a class="dropdown-item" href="../admin/dashboard.php">View User Accounts</a></li>
-                            <li><a class="dropdown-item" href="#">View Products</a></li>
-                            <li><a class="dropdown-item" href="#">Add Products</a></li>
+                            <li><a class="dropdown-item" href="../admin/adminviewproducts.php">View Products</a></li>
+                            <li><a class="dropdown-item" href="../admin/adminaddproducts.php">Add Products</a></li>
                             <li><a class="dropdown-item" href="../logout.php">Log Out</a></li>
                         </ul>
                     </div>

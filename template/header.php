@@ -119,8 +119,8 @@ Completed By Murtaza Usmani
                         <li><a class="dropdown-item" href="./modules/admin/adminview.php">View Profile</a></li>
                             <li><a class="dropdown-item" href="./modules/admin/adminedit.php">Edit Profile</a></li>
                             <li><a class="dropdown-item" href="./modules/admin/dashboard.php">View Dashboard</a></li>
-                            <li><a class="dropdown-item" href="#">View Products</a></li>
-                            <li><a class="dropdown-item" href="#">Updates</a></li>
+                            <li><a class="dropdown-item" href="./modules/admin/adminviewproducts.php">View Products</a></li>
+                            <li><a class="dropdown-item" href="./modules/admin/adminaddproducts.php">Add Products</a></li>
                             <li><a class="dropdown-item" href="./modules/logout.php">Log Out</a></li>
                         </ul>
                     </div>
