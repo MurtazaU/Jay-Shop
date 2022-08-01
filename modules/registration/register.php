@@ -50,19 +50,19 @@ if(isset($_REQUEST['user_login'])){
             <form class="mt-5" method="POST" >
                 <div class="mb-3">
                     <label for="name" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="name" name="user_name" >
+                    <input type="text" class="form-control" id="name" name="user_name" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" name="user_email" >
+                    <input type="email" class="form-control" id="email" name="user_email" required>
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" name="user_password">
+                    <input type="password" class="form-control" id="password" name="user_password" required>
                 </div>
                 <div class="mb-3">
                     <label for="confirm-password" class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control" id="confirm-password" name="user_confirm_password">
+                    <input type="password" class="form-control" id="confirm-password" name="user_confirm_password" required>
                 </div>
                 
                 <input class="btn btn-large btn-transition" type="submit" name="user_login" value="Register">

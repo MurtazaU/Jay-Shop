@@ -109,24 +109,44 @@ Completed By Murtaza Usmani
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                     </a>
-                    <?php 
-                    if(isset($_SESSION['user_email'])){
-?>
+                    <?php
+                    if(isset($_SESSION['admin_email'])){
+                        ?>
+                        <div class="dropdown" style="margin-left:20px;">
+                        <button class="btn btn-success dropdown-toggle " type="button" id="user-profile" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admin
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="user-profile">
+                        <li><a class="dropdown-item" href="../admin/adminview.php">View Admin Profile</a></li>
+                            <li><a class="dropdown-item" href="../admin/adminedit.php">Edit Admin Profile</a></li>
+                            <li><a class="dropdown-item" href="../admin/dashboard.php">View User Accounts</a></li>
+                            <li><a class="dropdown-item" href="#">View Products</a></li>
+                            <li><a class="dropdown-item" href="#">Add Products</a></li>
+                            <li><a class="dropdown-item" href="../logout.php">Log Out</a></li>
+                        </ul>
+                    </div>
+                    <?php
+                    }
+                    else if(isset($_SESSION['user_email'])){
+                    ?>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="user-profile" data-bs-toggle="dropdown" aria-expanded="false">
                             Profile
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="user-profile">
-                            <li><a class="dropdown-item" href="../profile/view.php">View Profile</a></li>
-                            <li><a class="dropdown-item" href="../profile/edit.php">Edit Profile</a></li>
+                            <li><a class="dropdown-item" href="../profile/view.php">View User Profile</a></li>
+                            <li><a class="dropdown-item" href="../profile/edit.php">Edit User Profile</a></li>
                             <li><a class="dropdown-item" href="#">Settings</a></li>
                             <li><a class="dropdown-item" href="#">Security</a></li>
                             <li><a class="dropdown-item" href="#">Updates</a></li>
                             <li><a class="dropdown-item" href="../logout.php">Log Out</a></li>
                         </ul>
                     </div>
+                    
+                    
                     <?php
-                    } else{
+                        }
+                    else{
                         ?>
                             <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
@@ -137,7 +157,7 @@ Completed By Murtaza Usmani
                         </li>
                     </ul>
                         <?php
-                    }
+                    };
                     ?>
                 </div>
             </div>       <div>

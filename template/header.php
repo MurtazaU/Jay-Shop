@@ -109,7 +109,24 @@ Completed By Murtaza Usmani
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                     </a>
                     <?php 
-                    if(isset($_SESSION['user_email'])){
+                    if(isset($_SESSION['admin_email'])){
+                        ?>
+                        <div class="dropdown" style="margin-left:20px;">
+                        <button class="btn btn-success dropdown-toggle " type="button" id="user-profile" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admin
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="user-profile">
+                        <li><a class="dropdown-item" href="./modules/admin/adminview.php">View Profile</a></li>
+                            <li><a class="dropdown-item" href="./modules/admin/adminedit.php">Edit Profile</a></li>
+                            <li><a class="dropdown-item" href="./modules/admin/dashboard.php">View Dashboard</a></li>
+                            <li><a class="dropdown-item" href="#">View Products</a></li>
+                            <li><a class="dropdown-item" href="#">Updates</a></li>
+                            <li><a class="dropdown-item" href="./modules/logout.php">Log Out</a></li>
+                        </ul>
+                    </div>
+                    <?php
+                    } 
+                    else if(isset($_SESSION['user_email'])){
 ?>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="user-profile" data-bs-toggle="dropdown" aria-expanded="false">
@@ -124,8 +141,10 @@ Completed By Murtaza Usmani
                             <li><a class="dropdown-item" href="./modules/logout.php">Log Out</a></li>
                         </ul>
                     </div>
-                    <?php
-                    } else{
+                    
+                        <?php
+                    }
+                    else{
                         ?>
                             <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">

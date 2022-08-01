@@ -21,13 +21,23 @@ if(isset($_REQUEST['user_login'])){
         }
         else{
             $_SESSION['user_email'] = $useremail;
+
+            $query = $con->prepare('select * from admin where adminemail = ?');
+            $query->bindParam(1, $_SESSION['user_email']);
+            $query -> execute();
+            $count = $query->rowCount();
+
+            if($count > 0){
+                $_SESSION['admin_email'] = $useremail;
+            }
+            
             header('location: ../../index.php');
         }
 
 
 
-}
-
+        
+    }
 ?>
 
 <!DOCTYPE html>
@@ -50,11 +60,11 @@ if(isset($_REQUEST['user_login'])){
             <form class="mt-5" method="POST">
                 <div class="mb-3">
                     <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" name="user_email" >
+                    <input type="email" class="form-control" id="email" name="user_email" required>
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" name="user_password">
+                    <input type="password" class="form-control" id="password" name="user_password" required>
                 </div>
                 <input class="btn btn-large btn-transition" type="submit" name="user_login" value="LogIn">
 
